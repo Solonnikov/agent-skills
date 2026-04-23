@@ -10,3 +10,8 @@ Thumbs.db
 
 # Node (in case anyone adds tooling later)
 node_modules/
+
+# Local working docs (not for public repo)
+plan.md
+notes.md
+TODO.md
