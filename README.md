@@ -40,17 +40,23 @@ agent-skills/
 │   └── software-development/     # generic role agents (no framework lock-in)
 └── skills/                       # reusable how-to skills, one folder each
     ├── agent-skill-creator/
+    ├── content-repurposing/
+    ├── email-drafting/
     ├── evm-contract-scaffold/
     ├── git-workflow-recipes/
     ├── hardhat-etherscan-verification/
+    ├── meeting-notes-structure/
     ├── ngrx-feature-scaffold/
     ├── prompt-engineering-patterns/
     ├── regex-cookbook/
+    ├── research-brief-structure/
+    ├── resume-tailor/
     ├── reown-appkit-web3/
     ├── solana-program-scaffold/
     ├── stripe-subscription-lifecycle/
     ├── technical-seo-checklist/
-    └── wagmi-contract-interaction/
+    ├── wagmi-contract-interaction/
+    └── writing-style-editor/
 ```
 
 **Skills** — procedures, patterns, templates, and checklists an agent loads on demand. Each skill is a folder with a tight `SKILL.md` and long-form `references/`.
@@ -73,6 +79,12 @@ agent-skills/
 | [solana-program-scaffold](./skills/solana-program-scaffold/SKILL.md) | Web3 (Solana) | Anchor program scaffold — PDAs, SOL/SPL variants, constraint validation, testing. |
 | [wagmi-contract-interaction](./skills/wagmi-contract-interaction/SKILL.md) | Web3 (EVM) | Read, write, and watch EVM smart contracts with wagmi v2. |
 | [stripe-subscription-lifecycle](./skills/stripe-subscription-lifecycle/SKILL.md) | Backend / Payments | Stripe subscriptions end-to-end — webhook-driven state sync, cancellation, tier downgrades, testing. |
+| [writing-style-editor](./skills/writing-style-editor/SKILL.md) | Writing / Life | Tighten prose — cut fluff, vary sentence length, strengthen verbs, match a voice. |
+| [email-drafting](./skills/email-drafting/SKILL.md) | Writing / Life | Draft emails in the right tone — cold, follow-up, apology, decline, feedback. |
+| [meeting-notes-structure](./skills/meeting-notes-structure/SKILL.md) | Writing / Life | Notes that capture decisions and action items — templates for standups, 1-on-1s, retros, planning. |
+| [resume-tailor](./skills/resume-tailor/SKILL.md) | Writing / Life | Tailor a résumé to a JD — parse, rewrite bullets, quantify, pass ATS. |
+| [content-repurposing](./skills/content-repurposing/SKILL.md) | Writing / Life | One piece of content across multiple platforms — blog → thread → LinkedIn → newsletter. |
+| [research-brief-structure](./skills/research-brief-structure/SKILL.md) | Writing / Life | Briefs that answer a question — sources, synthesis, recommendation, gaps. |
 
 ### Agents
 
