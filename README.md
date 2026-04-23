@@ -40,11 +40,13 @@ agent-skills/
 │   └── software-development/     # generic role agents (no framework lock-in)
 └── skills/                       # reusable how-to skills, one folder each
     ├── agent-skill-creator/
-    ├── ngrx-feature-scaffold/
     ├── evm-contract-scaffold/
     ├── hardhat-etherscan-verification/
+    ├── ngrx-feature-scaffold/
+    ├── prompt-engineering-patterns/
     ├── reown-appkit-web3/
     ├── solana-program-scaffold/
+    ├── technical-seo-checklist/
     └── wagmi-contract-interaction/
 ```
 
@@ -57,7 +59,9 @@ agent-skills/
 | Skill | Category | Purpose |
 |-------|----------|---------|
 | [agent-skill-creator](./skills/agent-skill-creator/SKILL.md) | Meta | Authoring new skills in this repo's format. |
+| [prompt-engineering-patterns](./skills/prompt-engineering-patterns/SKILL.md) | AI / LLM | Production prompt patterns — roles, few-shot, CoT, structured output, caching, evaluation. |
 | [ngrx-feature-scaffold](./skills/ngrx-feature-scaffold/SKILL.md) | Angular | Scaffold a complete NgRx feature (actions, reducer, effects, selectors, facade, tests). |
+| [technical-seo-checklist](./skills/technical-seo-checklist/SKILL.md) | Web / SEO | Metadata, structured data, crawlability, Core Web Vitals, international targeting. |
 | [evm-contract-scaffold](./skills/evm-contract-scaffold/SKILL.md) | Web3 (EVM) | Bootstrap a Solidity project — Foundry-first, OpenZeppelin patterns, testing, deployment. |
 | [hardhat-etherscan-verification](./skills/hardhat-etherscan-verification/SKILL.md) | Web3 (EVM) | Verify deployed contracts — plugin path + manual V2 API fallback. |
 | [reown-appkit-web3](./skills/reown-appkit-web3/SKILL.md) | Web3 | Integrate `@reown/appkit` multi-chain wallets (EVM, Solana, Bitcoin). |

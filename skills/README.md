@@ -12,11 +12,23 @@ Each skill lives in its own folder with a `SKILL.md` (concise, action-oriented) 
 |-------|---------|
 | [agent-skill-creator](./agent-skill-creator/SKILL.md) | Authors new skills for this repo with consistent format, frontmatter, and references. |
 
+### AI / LLM engineering
+
+| Skill | Purpose |
+|-------|---------|
+| [prompt-engineering-patterns](./prompt-engineering-patterns/SKILL.md) | Structure prompts for production LLM apps — roles, delimiters, chain-of-thought, few-shot, structured output, caching, evaluation. |
+
 ### Frontend / Angular
 
 | Skill | Purpose |
 |-------|---------|
 | [ngrx-feature-scaffold](./ngrx-feature-scaffold/SKILL.md) | Scaffold a complete NgRx feature (actions, reducer, effects, selectors, facade, tests) using modern Angular patterns. |
+
+### Web / SEO
+
+| Skill | Purpose |
+|-------|---------|
+| [technical-seo-checklist](./technical-seo-checklist/SKILL.md) | Audit and implement the technical SEO basics — metadata, structured data, crawlability, Core Web Vitals, international targeting. |
 
 ### Web3 — EVM
 
