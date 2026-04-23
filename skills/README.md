@@ -19,6 +19,17 @@ Each skill lives in its own folder with a `SKILL.md` (concise, action-oriented) 
 | [git-workflow-recipes](./git-workflow-recipes/SKILL.md) | Recipes for undoing mistakes, safe rebasing, resolving conflicts, rescuing lost work, PR-friendly history cleanup. |
 | [regex-cookbook](./regex-cookbook/SKILL.md) | Copy-ready regex patterns for the strings people match every day — plus building blocks, language differences, and debugging. |
 
+### Writing, work & life
+
+| Skill | Purpose |
+|-------|---------|
+| [writing-style-editor](./writing-style-editor/SKILL.md) | Tighten prose — cut fluff, vary sentence length, strengthen verbs, match a target voice. |
+| [email-drafting](./email-drafting/SKILL.md) | Draft emails in the right tone and length — cold outreach, follow-up, apology, decline, difficult feedback. |
+| [meeting-notes-structure](./meeting-notes-structure/SKILL.md) | Meeting notes that capture decisions and action items — templates for standups, 1-on-1s, retros, planning. |
+| [resume-tailor](./resume-tailor/SKILL.md) | Tailor a résumé to a specific JD — parse the posting, rewrite bullets, quantify, pass ATS filters. |
+| [content-repurposing](./content-repurposing/SKILL.md) | Turn one piece of content into multiple surfaces — blog → thread → LinkedIn → newsletter — matching each platform. |
+| [research-brief-structure](./research-brief-structure/SKILL.md) | Research briefs that answer a question — sources, synthesis, recommendation, gaps, triggers to revisit. |
+
 ### AI / LLM engineering
 
 | Skill | Purpose |
