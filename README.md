@@ -1,46 +1,92 @@
 # agent-skills
 
-A public collection of agent skills — reusable capabilities, prompts, and workflows for Claude Code and other agentic coding tools.
+[![GitHub release](https://img.shields.io/github/v/release/Solonnikov/agent-skills?sort=semver)](https://github.com/Solonnikov/agent-skills/releases)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](#license)
 
-This repo is a place to share, experiment with, and iterate on skills that extend what an AI agent can do out of the box: coding patterns, review checklists, automation recipes, domain-specific helpers, and more.
+A public, experimental collection of **agent skills** and **role agents** for Claude Code and other agentic coding tools. General-purpose content alongside specialized material in areas I work in daily — Angular (with NgRx) and Web3 (wallet integrations, on-chain flows).
 
-## What is a skill?
+This repository is a work in progress and a build-in-public snapshot. Use any of it as starting material, copy, or adapt — but verify what you adopt.
 
-A skill is a self-contained package of instructions (and optional scripts, templates, or config) that an agent can load on demand to perform a specific task well. Think of it like a specialized mini-manual the agent pulls in only when relevant — keeping the base context lean while making deep expertise available when needed.
-
-Typical contents of a skill:
-
-- **`SKILL.md`** — the instructions the agent reads (what the skill does, when to use it, how to apply it).
-- **Supporting files** — scripts, templates, examples, or reference docs the skill points to.
-
-## Repo structure
+## What's here
 
 ```
 agent-skills/
-├── README.md
-└── skills/
-    └── <skill-name>/
-        ├── SKILL.md
-        └── ...            # optional scripts, templates, examples
+├── agents/                   # Role-style agent prompts
+│   ├── software-development/ # Generic roles: frontend, backend, test, review, security
+│   ├── frontend/             # Angular-specific: code review, test writer, UI review
+│   └── web3/                 # Web3 security: wallet / payment / on-chain audit
+└── skills/                   # Reusable how-to skills
+    ├── ngrx-feature-scaffold/
+    └── reown-appkit-web3/
 ```
 
-Each skill lives in its own directory under `skills/` and is documented by its own `SKILL.md`.
+**Skills** are reusable "how-to" instructions an agent loads on demand — procedures, patterns, templates, and checklists. Each skill is a folder with a tight [`SKILL.md`](./skills/ngrx-feature-scaffold/SKILL.md) and long-form `references/`.
 
-## Using a skill
+**Agents** are role-style Markdown definitions — who is responsible for what, how they decide, and how they hand off. Generic roles under [`agents/software-development/`](./agents/software-development) have no framework lock-in. Specialized agents under [`agents/frontend/`](./agents/frontend) and [`agents/web3/`](./agents/web3) ship with Claude Code frontmatter and drop straight into `.claude/agents/`.
 
-Copy the skill directory into your agent's skills folder (e.g. `~/.claude/skills/` for Claude Code), or reference it directly from a project. Then invoke it the way your agent expects — for Claude Code, that's typically `/<skill-name>` or a natural-language request that matches the skill's trigger description.
+### Skills
+
+| Skill | Purpose |
+|-------|---------|
+| [ngrx-feature-scaffold](./skills/ngrx-feature-scaffold/SKILL.md) | Scaffold a complete NgRx feature (actions, reducer, effects, selectors, facade, tests) using modern Angular patterns. |
+| [reown-appkit-web3](./skills/reown-appkit-web3/SKILL.md) | Integrate `@reown/appkit` multi-chain wallets (EVM via wagmi, Solana, Bitcoin) — init, state, signing, security. |
+
+### Agents
+
+**Generic role agents** — [`agents/software-development/`](./agents/software-development): `frontend-developer`, `backend-developer`, `test-engineer`, `code-reviewer`, `security-reviewer`.
+
+**Angular specialists** — [`agents/frontend/`](./agents/frontend): `angular-code-reviewer`, `angular-test-writer`, `ui-reviewer`.
+
+**Web3 specialists** — [`agents/web3/`](./agents/web3): `web3-auditor`.
+
+## Using this repo
+
+Copy the skill or agent file into your host tool:
+
+- **Claude Code** — agents go in `~/.claude/agents/` (user-wide) or `<project>/.claude/agents/` (per project). Skills go in `~/.claude/skills/` or the project equivalent.
+- **Other agentic tools** — read the Markdown and adapt to your tool's conventions.
 
 ## Contributing
 
-Skills here are a work in progress and intentionally experimental. Pull requests, issues, and ideas are welcome.
+Pull requests and ideas welcome. When adding a new skill:
 
-When adding a new skill:
+1. Create a folder under `skills/` with a `SKILL.md` that includes YAML frontmatter: `name` (kebab-case) and `description` (`<what it does>. Use when <trigger>.`).
+2. Keep `SKILL.md` tight and action-oriented; put depth in `references/*.md`.
+3. Link references by description, not file name.
 
-1. Create a new directory under `skills/`.
-2. Add a `SKILL.md` with a clear name, one-line description, and instructions for when/how to use it.
-3. Keep the scope tight — one skill, one job.
-4. Include a short example or usage note so others can tell at a glance whether it fits their workflow.
+When adding a new agent:
+
+1. Generic role → `agents/software-development/` in narrative format (Identity / Role summary / Responsibilities / Decision framework / Constraints / Failure modes / Outputs / Completion and handoff / Collaboration / Escalation).
+2. Framework-specific → `agents/<domain>/` with Claude Code YAML frontmatter (`name`, `description`, `tools`, `model`).
+
+Direct pushes to `main` are blocked — changes land through pull requests.
+
+## Releases
+
+Releases follow [semver](https://semver.org/):
+
+- **Patch** (`v0.1.1`) — fixes, clarifications, small improvements to existing skills/agents.
+- **Minor** (`v0.2.0`) — new skills, new agents, backwards-compatible restructuring.
+- **Major** (`v1.0.0` and beyond) — breaking restructures of the folder layout or agent format.
+
+Cutting a release:
+
+```bash
+git tag v0.2.0
+git push origin v0.2.0
+gh release create v0.2.0 --generate-notes
+```
+
+The first two commands mark the tag; `gh release create --generate-notes` builds release notes from merged PR titles since the last tag. The release then shows up in the repo's **Releases** sidebar.
+
+## Disclaimer
+
+Most of the content here is AI-generated or produced with significant AI assistance, then reviewed and edited. It is not a guarantee of accuracy, completeness, or fit for your use case — treat it like any other generated material and verify what you adopt.
+
+These skills and agents are **experimental**. Their behavior and side effects are not fully characterized. Content may be wrong for your situation or unsafe without human review (for example: running commands, changing files, or applying security-related guidance). This is not legal, financial, or professional advice.
+
+**Do not use or apply this material on systems you do not own or are not authorised to change.** Use at your own risk.
 
 ## License
 
-MIT — see [LICENSE](LICENSE) if present, otherwise treat contents as MIT-licensed unless a specific skill states otherwise.
+MIT — see [LICENSE](./LICENSE) if present. Individual skills or agents may state otherwise; check the file if in doubt.
