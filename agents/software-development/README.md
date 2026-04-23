@@ -1,20 +1,21 @@
 # Software development agents
 
-Role-style agent definitions for a typical software team. Technology-agnostic — frame the work in terms of responsibilities, decisions, and handoff, not specific frameworks.
-
-For framework-specific specialists, see:
-
-- [`../frontend/`](../frontend) — Angular-focused reviewers and test writers.
-- [`../web3/`](../web3) — wallet, payment, and on-chain auditors.
+Generic role definitions for a typical software team. No framework lock-in. For Angular-, NgRx-, or Web3-specific how-to guidance, see [`../../skills/`](../../skills).
 
 ## Agents
 
-- [frontend-developer](./frontend-developer.md) — builds production UI, state, and API integration.
-- [backend-developer](./backend-developer.md) — builds production services, data access, and API contracts.
-- [test-engineer](./test-engineer.md) — writes and reviews tests; enforces the test pyramid.
-- [code-reviewer](./code-reviewer.md) — reviews diffs for quality, correctness, and convention adherence.
-- [security-reviewer](./security-reviewer.md) — reviews changes for security risks before they ship.
+| Agent | Role |
+|-------|------|
+| [frontend-developer](./frontend-developer.md) | Builds production UI, client state, and API integration. |
+| [backend-developer](./backend-developer.md) | Builds production services, data access, and API contracts. |
+| [test-engineer](./test-engineer.md) | Writes and reviews tests. Enforces the test pyramid. |
+| [code-reviewer](./code-reviewer.md) | Reviews diffs for quality, safety, and conventions. |
+| [security-reviewer](./security-reviewer.md) | Reviews changes for security risks before they ship. |
+| [ui-reviewer](./ui-reviewer.md) | Reviews UI for design consistency, accessibility, and responsive behavior. |
+| [web3-auditor](./web3-auditor.md) | Audits wallet integrations, crypto payment flows, and on-chain interactions. |
 
 ## Format
 
-These are narrative role definitions, not Claude Code configs. They use the standard sections: Identity → Role summary → Responsibilities → Decision framework → Constraints → Failure modes → Outputs → Completion and handoff → Collaboration → Escalation. No YAML frontmatter. Use them as prompts or as copy material when writing framework-specific agents for your own projects.
+Role agents use a narrative format: **Identity → Role summary → Responsibilities → Decision framework → Constraints → Failure modes → Outputs → Completion and handoff → Collaboration → Escalation**.
+
+Some agents (`ui-reviewer`, `web3-auditor`) include YAML frontmatter so they drop directly into `~/.claude/agents/`. The rest are prompt material you can adapt to your host's agent system.
