@@ -13,6 +13,10 @@ Generic role definitions for a typical software team. No framework lock-in. For 
 | [security-reviewer](./security-reviewer.md) | Reviews changes for security risks before they ship. |
 | [ui-reviewer](./ui-reviewer.md) | Reviews UI for design consistency, accessibility, and responsive behavior. |
 | [web3-auditor](./web3-auditor.md) | Audits wallet integrations, crypto payment flows, and on-chain interactions. |
+| [product-manager](./product-manager.md) | Translates problems into specs, prioritizes, defines success metrics. |
+| [devops-engineer](./devops-engineer.md) | Owns CI/CD, infra, observability, on-call, cost. |
+| [technical-writer](./technical-writer.md) | Writes and maintains READMEs, API docs, changelogs, release notes, migration guides. |
+| [solution-architect](./solution-architect.md) | Owns system-level design decisions, ADRs, cross-team interfaces. |
 
 ## Format
 
