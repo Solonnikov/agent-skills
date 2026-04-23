@@ -70,7 +70,7 @@ agent-skills/
 
 ### Agents
 
-[`agents/software-development/`](./agents/software-development) — `frontend-developer`, `backend-developer`, `test-engineer`, `code-reviewer`, `security-reviewer`, `ui-reviewer`, `web3-auditor`.
+[`agents/software-development/`](./agents/software-development) — `frontend-developer`, `backend-developer`, `test-engineer`, `code-reviewer`, `security-reviewer`, `ui-reviewer`, `web3-auditor`, `product-manager`, `devops-engineer`, `technical-writer`, `solution-architect`.
 
 ## Tool compatibility
 
