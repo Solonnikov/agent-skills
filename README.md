@@ -46,6 +46,7 @@ agent-skills/
     ├── prompt-engineering-patterns/
     ├── reown-appkit-web3/
     ├── solana-program-scaffold/
+    ├── stripe-subscription-lifecycle/
     ├── technical-seo-checklist/
     └── wagmi-contract-interaction/
 ```
@@ -67,6 +68,7 @@ agent-skills/
 | [reown-appkit-web3](./skills/reown-appkit-web3/SKILL.md) | Web3 | Integrate `@reown/appkit` multi-chain wallets (EVM, Solana, Bitcoin). |
 | [solana-program-scaffold](./skills/solana-program-scaffold/SKILL.md) | Web3 (Solana) | Anchor program scaffold — PDAs, SOL/SPL variants, constraint validation, testing. |
 | [wagmi-contract-interaction](./skills/wagmi-contract-interaction/SKILL.md) | Web3 (EVM) | Read, write, and watch EVM smart contracts with wagmi v2. |
+| [stripe-subscription-lifecycle](./skills/stripe-subscription-lifecycle/SKILL.md) | Backend / Payments | Stripe subscriptions end-to-end — webhook-driven state sync, cancellation, tier downgrades, testing. |
 
 ### Agents
 

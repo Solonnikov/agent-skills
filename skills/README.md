@@ -24,6 +24,12 @@ Each skill lives in its own folder with a `SKILL.md` (concise, action-oriented) 
 |-------|---------|
 | [ngrx-feature-scaffold](./ngrx-feature-scaffold/SKILL.md) | Scaffold a complete NgRx feature (actions, reducer, effects, selectors, facade, tests) using modern Angular patterns. |
 
+### Backend / payments
+
+| Skill | Purpose |
+|-------|---------|
+| [stripe-subscription-lifecycle](./stripe-subscription-lifecycle/SKILL.md) | Stripe subscriptions end-to-end — webhook-driven state sync, cancellation, tier downgrades, testing with the Stripe CLI. |
+
 ### Web / SEO
 
 | Skill | Purpose |
