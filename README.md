@@ -41,9 +41,11 @@ agent-skills/
 └── skills/                       # reusable how-to skills, one folder each
     ├── agent-skill-creator/
     ├── evm-contract-scaffold/
+    ├── git-workflow-recipes/
     ├── hardhat-etherscan-verification/
     ├── ngrx-feature-scaffold/
     ├── prompt-engineering-patterns/
+    ├── regex-cookbook/
     ├── reown-appkit-web3/
     ├── solana-program-scaffold/
     ├── stripe-subscription-lifecycle/
@@ -60,6 +62,8 @@ agent-skills/
 | Skill | Category | Purpose |
 |-------|----------|---------|
 | [agent-skill-creator](./skills/agent-skill-creator/SKILL.md) | Meta | Authoring new skills in this repo's format. |
+| [git-workflow-recipes](./skills/git-workflow-recipes/SKILL.md) | Everyday dev | Recipes for undoing, rebasing, resolving conflicts, rescuing lost work, PR cleanup. |
+| [regex-cookbook](./skills/regex-cookbook/SKILL.md) | Everyday dev | Copy-ready regex patterns, building blocks, language differences, debugging. |
 | [prompt-engineering-patterns](./skills/prompt-engineering-patterns/SKILL.md) | AI / LLM | Production prompt patterns — roles, few-shot, CoT, structured output, caching, evaluation. |
 | [ngrx-feature-scaffold](./skills/ngrx-feature-scaffold/SKILL.md) | Angular | Scaffold a complete NgRx feature (actions, reducer, effects, selectors, facade, tests). |
 | [technical-seo-checklist](./skills/technical-seo-checklist/SKILL.md) | Web / SEO | Metadata, structured data, crawlability, Core Web Vitals, international targeting. |
