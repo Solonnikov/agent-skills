@@ -12,6 +12,12 @@ Each skill lives in its own folder with a `SKILL.md` (concise, action-oriented) 
 |-------|---------|
 | [agent-skill-creator](./agent-skill-creator/SKILL.md) | Authors new skills for this repo with consistent format, frontmatter, and references. |
 
+### Architect-style (design playbooks)
+
+| Skill | Purpose |
+|-------|---------|
+| [dapp-architect](./dapp-architect/SKILL.md) | End-to-end dApp design — brief, trust boundaries, contract layer, client layer, indexing, off-chain services, deployment + ops. |
+
 ### Everyday dev
 
 | Skill | Purpose |
