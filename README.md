@@ -41,7 +41,10 @@ agent-skills/
 └── skills/                       # reusable how-to skills, one folder each
     ├── agent-skill-creator/
     ├── ngrx-feature-scaffold/
+    ├── evm-contract-scaffold/
+    ├── hardhat-etherscan-verification/
     ├── reown-appkit-web3/
+    ├── solana-program-scaffold/
     └── wagmi-contract-interaction/
 ```
 
@@ -51,12 +54,15 @@ agent-skills/
 
 ### Skills
 
-| Skill | Purpose |
-|-------|---------|
-| [agent-skill-creator](./skills/agent-skill-creator/SKILL.md) | Meta-skill for authoring new skills in this repo with consistent format. |
-| [ngrx-feature-scaffold](./skills/ngrx-feature-scaffold/SKILL.md) | Scaffold a complete NgRx feature (actions, reducer, effects, selectors, facade, tests). |
-| [reown-appkit-web3](./skills/reown-appkit-web3/SKILL.md) | Integrate `@reown/appkit` multi-chain wallets (EVM, Solana, Bitcoin). |
-| [wagmi-contract-interaction](./skills/wagmi-contract-interaction/SKILL.md) | Read, write, and watch EVM smart contracts with wagmi v2. |
+| Skill | Category | Purpose |
+|-------|----------|---------|
+| [agent-skill-creator](./skills/agent-skill-creator/SKILL.md) | Meta | Authoring new skills in this repo's format. |
+| [ngrx-feature-scaffold](./skills/ngrx-feature-scaffold/SKILL.md) | Angular | Scaffold a complete NgRx feature (actions, reducer, effects, selectors, facade, tests). |
+| [evm-contract-scaffold](./skills/evm-contract-scaffold/SKILL.md) | Web3 (EVM) | Bootstrap a Solidity project — Foundry-first, OpenZeppelin patterns, testing, deployment. |
+| [hardhat-etherscan-verification](./skills/hardhat-etherscan-verification/SKILL.md) | Web3 (EVM) | Verify deployed contracts — plugin path + manual V2 API fallback. |
+| [reown-appkit-web3](./skills/reown-appkit-web3/SKILL.md) | Web3 | Integrate `@reown/appkit` multi-chain wallets (EVM, Solana, Bitcoin). |
+| [solana-program-scaffold](./skills/solana-program-scaffold/SKILL.md) | Web3 (Solana) | Anchor program scaffold — PDAs, SOL/SPL variants, constraint validation, testing. |
+| [wagmi-contract-interaction](./skills/wagmi-contract-interaction/SKILL.md) | Web3 (EVM) | Read, write, and watch EVM smart contracts with wagmi v2. |
 
 ### Agents
 

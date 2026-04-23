@@ -6,12 +6,32 @@ Each skill lives in its own folder with a `SKILL.md` (concise, action-oriented) 
 
 ## Available skills
 
+### Meta
+
 | Skill | Purpose |
 |-------|---------|
-| [agent-skill-creator](./agent-skill-creator/SKILL.md) | Meta-skill — authors new skills for this repo with consistent format, frontmatter, and references. |
+| [agent-skill-creator](./agent-skill-creator/SKILL.md) | Authors new skills for this repo with consistent format, frontmatter, and references. |
+
+### Frontend / Angular
+
+| Skill | Purpose |
+|-------|---------|
 | [ngrx-feature-scaffold](./ngrx-feature-scaffold/SKILL.md) | Scaffold a complete NgRx feature (actions, reducer, effects, selectors, facade, tests) using modern Angular patterns. |
-| [reown-appkit-web3](./reown-appkit-web3/SKILL.md) | Integrate `@reown/appkit` multi-chain wallet connections (EVM via wagmi, Solana, Bitcoin) — init, state, signing, security. |
-| [wagmi-contract-interaction](./wagmi-contract-interaction/SKILL.md) | Read, write, and watch EVM smart contracts with wagmi v2 — simulate → write → wait, batched reads, event subscriptions, error handling. |
+
+### Web3 — EVM
+
+| Skill | Purpose |
+|-------|---------|
+| [evm-contract-scaffold](./evm-contract-scaffold/SKILL.md) | Bootstrap a Solidity project — Foundry-first with Hardhat alternative, OpenZeppelin patterns, testing, deployment. |
+| [hardhat-etherscan-verification](./hardhat-etherscan-verification/SKILL.md) | Verify deployed contracts — plugin path for the common case, manual V2 API fallback for edge cases. |
+| [reown-appkit-web3](./reown-appkit-web3/SKILL.md) | Integrate `@reown/appkit` multi-chain wallet connections (EVM via wagmi, Solana, Bitcoin). |
+| [wagmi-contract-interaction](./wagmi-contract-interaction/SKILL.md) | Read, write, and watch EVM smart contracts with wagmi v2 — simulate/write/wait, batched reads, events, error handling. |
+
+### Web3 — Solana
+
+| Skill | Purpose |
+|-------|---------|
+| [solana-program-scaffold](./solana-program-scaffold/SKILL.md) | Bootstrap an Anchor program — PDA patterns, dual SOL/SPL instruction variants, constraint-driven validation, on-chain randomness, testing, deployment. |
 
 ## Format
 
