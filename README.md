@@ -43,6 +43,7 @@ agent-skills/
 └── skills/                       # reusable how-to skills, one folder each
     ├── agent-skill-creator/
     ├── content-repurposing/
+    ├── dapp-architect/
     ├── email-drafting/
     ├── evm-contract-scaffold/
     ├── git-workflow-recipes/
@@ -70,6 +71,7 @@ agent-skills/
 | Skill | Category | Purpose |
 |-------|----------|---------|
 | [agent-skill-creator](./skills/agent-skill-creator/SKILL.md) | Meta | Authoring new skills in this repo's format. |
+| [dapp-architect](./skills/dapp-architect/SKILL.md) | Architect | End-to-end dApp design — brief, trust boundaries, contracts, client, indexing, off-chain, ops. |
 | [git-workflow-recipes](./skills/git-workflow-recipes/SKILL.md) | Everyday dev | Recipes for undoing, rebasing, resolving conflicts, rescuing lost work, PR cleanup. |
 | [regex-cookbook](./skills/regex-cookbook/SKILL.md) | Everyday dev | Copy-ready regex patterns, building blocks, language differences, debugging. |
 | [prompt-engineering-patterns](./skills/prompt-engineering-patterns/SKILL.md) | AI / LLM | Production prompt patterns — roles, few-shot, CoT, structured output, caching, evaluation. |
