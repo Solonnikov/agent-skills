@@ -85,38 +85,13 @@ Content is written in plain Markdown so every tool that reads text can use it.
 
 ## Contributing
 
-Pull requests and ideas welcome.
+Pull requests and ideas welcome. See [`CONTRIBUTING.md`](./CONTRIBUTING.md) for the full working flow — branch conventions, PR workflow, skill authoring steps, release rules, semver cadence, and commit/PR-title conventions.
 
-**Adding a new skill** — see [`agent-skill-creator`](./skills/agent-skill-creator/SKILL.md) for the full format.
-
-1. Create `skills/<kebab-case-name>/SKILL.md` with YAML frontmatter (`name`, `description`).
-2. Keep `SKILL.md` tight (<80 lines). Put depth in `references/*.md`.
-3. Link references by description, not file name.
-4. Add the skill to this README and `skills/README.md`.
-
-**Adding a new agent** — `agents/software-development/<role>.md`, narrative format (Identity → Role summary → Responsibilities → Decision framework → Constraints → Failure modes → Outputs → Completion and handoff → Collaboration → Escalation). Optional YAML frontmatter for Claude Code compatibility.
-
-Direct pushes to `main` are blocked — changes land through pull requests.
-
-## Releases
-
-Semver: [`vMAJOR.MINOR.PATCH`](https://semver.org/).
-
-- **Patch** (`v0.1.1`) — fixes, clarifications, small improvements to existing content.
-- **Minor** (`v0.2.0`) — new skill, new agent, backwards-compatible restructuring.
-- **Major** (`v1.0.0`+) — breaking changes to folder layout or file format.
-
-Cutting a release:
-
-```bash
-git tag vX.Y.Z
-git push origin vX.Y.Z
-gh release create vX.Y.Z --generate-notes
-```
-
-`--generate-notes` builds the release body from merged PR titles since the last tag. Clean PR titles = clean release notes.
-
-Not every merge is a release — cut one when meaningful change has accumulated (new skill, new agent, or a batch of small improvements).
+Quick summary:
+- `main` is protected — every change goes through a PR.
+- New skill → follow the format in [`agent-skill-creator`](./skills/agent-skill-creator/SKILL.md).
+- Patch for fixes, minor for a new skill/agent, major for breaking changes.
+- Clean PR titles → clean auto-generated release notes.
 
 ## Disclaimer
 
