@@ -1,5 +1,7 @@
 # agent-skills
 
+![agent-skills — versioned skills and agents for Claude Code, Cursor, and any LLM](./docs/social-preview.png)
+
 [![GitHub release](https://img.shields.io/github/v/release/Solonnikov/agent-skills?sort=semver)](https://github.com/Solonnikov/agent-skills/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](#license)
 
