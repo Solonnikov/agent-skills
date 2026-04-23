@@ -12,6 +12,13 @@ Each skill lives in its own folder with a `SKILL.md` (concise, action-oriented) 
 |-------|---------|
 | [agent-skill-creator](./agent-skill-creator/SKILL.md) | Authors new skills for this repo with consistent format, frontmatter, and references. |
 
+### Everyday dev
+
+| Skill | Purpose |
+|-------|---------|
+| [git-workflow-recipes](./git-workflow-recipes/SKILL.md) | Recipes for undoing mistakes, safe rebasing, resolving conflicts, rescuing lost work, PR-friendly history cleanup. |
+| [regex-cookbook](./regex-cookbook/SKILL.md) | Copy-ready regex patterns for the strings people match every day — plus building blocks, language differences, and debugging. |
+
 ### AI / LLM engineering
 
 | Skill | Purpose |
