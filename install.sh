@@ -64,8 +64,15 @@ else
 fi
 
 # Default mode: link if running from a clone, copy if from curl.
+# Exception: --target copy implies copy mode (symlinks into a "copy" target are confusing).
 if [[ "$MODE" == "auto" ]]; then
-    if $FROM_CLONE; then MODE="link"; else MODE="copy"; fi
+    if [[ "$TARGET" == "copy" ]]; then
+        MODE="copy"
+    elif $FROM_CLONE; then
+        MODE="link"
+    else
+        MODE="copy"
+    fi
 fi
 
 # ---------------------------------------------------------------------------
